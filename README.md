@@ -1,0 +1,136 @@
+# 💬 Sentiment Analysis – Task 4
+
+> **Internship Task-4 – CODTECH IT SOLUTIONS PVT. LTD.**  
+> 📊 **Project Title**: Sentiment Analysis using NLP  
+> 👩‍💻 **Intern**: Salila Punneshetty  
+> 🧑‍🏫 **Mentor**: Neela Santosh  
+> ⏳ **Duration**: 4 Weeks  
+
+---
+
+## 🔍 Overview
+
+This project is submitted as part of the **CODTECH Internship**, focused on **Sentiment Analysis using Natural Language Processing (NLP)**. The main objective is to analyze sentiment (positive/negative/neutral) from textual data—specifically, tweets from the [Kaggle Twitter US Airline Sentiment Dataset](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment).
+
+---
+
+## 📁 Folder Structure
+
+SentimentAnalysis_Task4/
+│
+├── data/
+│ └── Tweets.csv
+│
+├── models/
+│ └── sentiment_model.pkl # Trained ML model
+│
+├── outputs/
+│ ├── wordcloud_positive.png
+│ └── wordcloud_negative.png
+│
+├── notebooks/
+│ └── SentimentAnalysis.ipynb # Main notebook
+│
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 📌 Instructions
+
+- Perform **sentiment analysis** on text data using NLP.
+- Include in your notebook:
+  - 📑 Data preprocessing
+  - 🤖 Model implementation
+  - 📈 Insights & visualizations
+
+---
+
+## ⚙️ Project Workflow
+
+### 1. Import Libraries
+Essential libraries for:
+- Data manipulation (`pandas`, `numpy`)
+- Text processing (`re`, `nltk`)
+- Visualization (`matplotlib`, `seaborn`, `wordcloud`)
+- Machine Learning (`sklearn`)
+- Model saving (`pickle`)
+
+---
+
+### 2. Load Dataset
+- Dataset: `Tweets.csv` (from Kaggle)
+- Source: [Twitter US Airline Sentiment Dataset](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment)
+
+---
+
+### 3. Data Preprocessing
+- Convert all text to lowercase
+- Remove URLs, special characters, and stop words
+- Tokenize and clean the tweets
+- Store in a new column: `clean_text`
+
+---
+
+### 4. Visualizations
+Generate **word clouds** for each sentiment category:
+
+```python
+for sentiment in ['positive', 'negative']:
+    text = " ".join(df[df['label'] == sentiment]['clean_text'])
+    wordcloud = WordCloud(width=600, height=400, background_color='white').generate(text)
+    wordcloud.to_file(f'../outputs/wordcloud_{sentiment}.png')
+```
+### 5. Feature Extraction
+```
+    Use TfidfVectorizer with max_features=3000:
+    tfidf = TfidfVectorizer(max_features=3000, stop_words='english')
+```
+
+# Why 3000 features?
+To reduce overfitting, speed up training, and focus on the most important words while avoiding sparse matrices.
+
+### 6. Model Training & Evaluation
+Split data into training and testing sets
+
+Train a Logistic Regression model
+
+Evaluate using:
+
+Accuracy Score
+
+Classification Report
+
+Confusion Matrix
+
+### 7. Model Saving
+Save the trained model using:
+```
+import pickle
+with open('../models/sentiment_model.pkl', 'wb') as f:
+    pickle.dump(model, f)
+```
+## 🛠 How to Use
+
+Place the dataset in data/Tweets.csv
+
+Open and run the notebook in notebooks/SentimentAnalysis.ipynb
+
+## Outputs:
+
+Word clouds in outputs/
+
+Trained model in models/sentiment_model.pkl
+
+Performance metrics in the notebook cell outputs
+
+#### *Links & References*
+
+📁 Dataset: Kaggle - Twitter US Airline Sentiment
+
+🛠 WordCloud Docs: https://github.com/amueller/word_cloud
+
+📖 Sklearn TF-IDF Vectorizer[Docs] :https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
+
+
