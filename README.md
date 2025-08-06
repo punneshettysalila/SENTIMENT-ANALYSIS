@@ -1,10 +1,16 @@
-# 💬 Sentiment Analysis – Task 4
+# 💬 SENTIMENT-ANALYSIS
 
-> **Internship Task-4 – CODTECH IT SOLUTIONS PVT. LTD.**  
-> 📊 **Project Title**: Sentiment Analysis using NLP  
-> 👩‍💻 **Intern**: Salila Punneshetty  
-> 🧑‍🏫 **Mentor**: Neela Santosh  
-> ⏳ **Duration**: 4 Weeks  
+**Company: CODTECH IT SOLUTIONS PVT. LTD.**
+
+**Name: SALILA PUNNESHETTY**
+
+**Intern ID: CT04DH2206**
+
+**Domain: DATA ANALYSIS**
+
+**Duration: 4 Weeks**
+
+**Mentor: NEELA SANTOSH**
 
 ---
 
@@ -139,7 +145,8 @@ Word clouds in outputs
 
 <img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/d3442f7e-6826-45a7-9f50-b94db78b34cf" />
 
-
+## Conclusion:
+This project provided hands-on experience with Natural Language Processing, enabling effective sentiment classification from real-world Twitter data. It strengthened my understanding of text preprocessing, feature extraction, and model evaluation using Python.
 
 #### *Links & References*
 
