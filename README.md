@@ -129,11 +129,17 @@ Open and run the notebook in notebooks/SentimentAnalysis.ipynb
 
 ## Outputs:
 
-Word clouds in outputs/
+Trained model in models/sentiment_model.pkl & Performance metrics in the notebook cell outputs
 
-Trained model in models/sentiment_model.pkl
 
-Performance metrics in the notebook cell outputs
+<img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/2bbc4f05-ae55-422f-bfaa-2c668a7a9654" />
+Word clouds in outputs
+
+<img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/21a4a339-0ec4-4563-a571-216df068206b" />
+
+<img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/d3442f7e-6826-45a7-9f50-b94db78b34cf" />
+
+
 
 #### *Links & References*
 
