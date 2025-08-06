@@ -17,21 +17,31 @@ This project is submitted as part of the **CODTECH Internship**, focused on **Se
 ## 📁 Folder Structure
 
 SentimentAnalysis_Task4/
+
 │
 ├── data/
+
 │ └── Tweets.csv
+
 │
 ├── models/
+
 │ └── sentiment_model.pkl # Trained ML model
 │
 ├── outputs/
+
 │ ├── wordcloud_positive.png
+
 │ └── wordcloud_negative.png
+
 │
 ├── notebooks/
+
 │ └── SentimentAnalysis.ipynb # Main notebook
+
 │
 ├── requirements.txt
+
 └── README.md
 
 
@@ -88,7 +98,7 @@ for sentiment in ['positive', 'negative']:
     tfidf = TfidfVectorizer(max_features=3000, stop_words='english')
 ```
 
-# Why 3000 features?
+### Why 3000 features?
 To reduce overfitting, speed up training, and focus on the most important words while avoiding sparse matrices.
 
 ### 6. Model Training & Evaluation
